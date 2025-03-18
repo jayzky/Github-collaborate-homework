@@ -1,9 +1,13 @@
-// 🌟 星空背景动画
+// 星空背景
 const canvas = document.getElementById('starsCanvas');
 const ctx = canvas.getContext('2d');
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+function setCanvasSize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+setCanvasSize();
+window.addEventListener('resize', setCanvasSize);
 
 let stars = [];
 for (let i = 0; i < 100; i++) {
@@ -34,7 +38,6 @@ function animateStars() {
 
     requestAnimationFrame(animateStars);
 }
-
 animateStars();
 
 // ✨ 鼠标点击特效
