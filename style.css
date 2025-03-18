@@ -1,7 +1,4 @@
----
----
-
-@import "{{ site.theme }}";/* 星空背景 */
+/* 星空背景 */
 body, html {
     margin: 0;
     padding: 0;
