@@ -1,4 +1,4 @@
-/* 星空背景 */
+/* 全局样式 */
 body, html {
     margin: 0;
     padding: 0;
@@ -7,10 +7,10 @@ body, html {
     background: black;
     color: white;
     font-family: 'Arial', sans-serif;
-    text-align: center;
     overflow-x: hidden;
 }
 
+/* 星空背景 */
 canvas {
     position: fixed;
     top: 0;
@@ -20,11 +20,16 @@ canvas {
     z-index: -1;
 }
 
+/* 主要内容容器 */
 .container {
     position: relative;
-    padding: 20px;
     max-width: 800px;
-    margin: auto;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    text-align: left; /* 左对齐 */
 }
 
 /* 文字美化 */
