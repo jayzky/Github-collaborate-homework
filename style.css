@@ -1,5 +1,7 @@
-/* 全局样式 */
-body, html {
+---
+---
+
+@import "{{ site.theme }}";body, html {
     margin: 0;
     padding: 0;
     width: 100%;
