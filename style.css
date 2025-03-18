@@ -1,25 +1,32 @@
----
----
-
-@import "{{ site.theme }}";body, html {
+/* 全局样式 */
+body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    background: black;
-    color: white;
     font-family: 'Arial', sans-serif;
     overflow-x: hidden;
 }
 
-/* 星空背景 */
-canvas {
+/* 背景图片动态切换 */
+.background-slider {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
+    background-size: cover;
+    background-position: center;
+    animation: bg-slide 10s linear infinite;
+}
+
+@keyframes bg-slide {
+    0% { background-image: url('assets/images/bj/1.jpg'); }
+    25% { background-image: url('assets/images/bj/2.jpg'); }
+    50% { background-image: url('assets/images/bj/3.jpg'); }
+    75% { background-image: url('assets/images/bj/4.jpg'); }
+    100% { background-image: url('assets/images/bj/5.jpg'); }
 }
 
 /* 主要内容容器 */
@@ -28,15 +35,16 @@ canvas {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    text-align: left; /* 左对齐 */
+    text-align: left;  /* 文本左对齐 */
+    color: #fff;
 }
 
-/* 文字美化 */
+/* 标题样式 */
 h1, h2 {
-    color: #FFD700; /* 金色标题 */
+    color: #FFD700;
 }
 
 /* 链接样式 */
@@ -46,4 +54,14 @@ a {
 }
 a:hover {
     text-decoration: underline;
+}
+
+/* 列表样式 */
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li::before {
+    content: "• ";
+    color: #FFD700;
 }
