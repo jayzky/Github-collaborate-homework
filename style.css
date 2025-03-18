@@ -22,11 +22,11 @@ body, html {
 }
 
 @keyframes bg-slide {
-    0% { background-image: url('assets/images/bj/1.jpg'); }
-    25% { background-image: url('assets/images/bj/2.jpg'); }
-    50% { background-image: url('assets/images/bj/3.jpg'); }
-    75% { background-image: url('assets/images/bj/4.jpg'); }
-    100% { background-image: url('assets/images/bj/5.jpg'); }
+    0% { background-image: url('assets/images/1.jpg'); }
+    25% { background-image: url('assets/images/2.jpg'); }
+    50% { background-image: url('assets/images/3.jpg'); }
+    75% { background-image: url('assets/images/4.jpg'); }
+    100% { background-image: url('assets/images/5.jpg'); }
 }
 
 /* 主要内容容器 */
